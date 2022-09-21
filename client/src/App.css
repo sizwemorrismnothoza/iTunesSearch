@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+.body{
+  background-color:#ECEFF1;
+}
+
+.card{
+  background-color: #ABB2B9;
+}
+
+.card .btn{
+   background-color: #DAF7A6;
+   color: #1C2833;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
