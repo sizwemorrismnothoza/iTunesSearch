@@ -67,7 +67,7 @@ const Search = ({favorites}) => {
             {/* Search fields */}
             <div className='row'>
                 <div className='col-md-10'>
-                    <h1 className='display-2'>Search 23</h1>
+                    <h1 className='display-2'>iTunes Search</h1>
                     <select className='form-control mb-2 ml-auto mr-auto' onChangeCapture={handleMediaTypeChange} style={{"width":"15rem"}}>
                         {mediaTypeOptions.map((type) => (
                             <option key={type.id}  >{type.type }</option>
