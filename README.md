@@ -10,7 +10,7 @@
 
 ## About <a name="about"></a>
 
-iTunes Search is a Reach and node fullstack app. The user can enter a search term and also select the media type (eg. audio book, music, music videos, books ect)
+iTunes Search is a app that allows the user to search the iTunes api. The user can enter a search term and also select the media type (eg. audio book, music, music videos)
 
 ## Download Installation <a name="install"></a>
 
@@ -18,8 +18,7 @@ iTunes Search is a Reach and node fullstack app. The user can enter a search ter
 
 1. Click on the download button and select the iTunes.zip download
 2. Extract the folder
-3. Include an image of the project structure
-4. In the project root directory there are two folders namely client and server.
+3. In the project root directory there are two folders namely client and server.
 
 ### Installation and starting the app
 
@@ -29,10 +28,9 @@ iTunes Search is a Reach and node fullstack app. The user can enter a search ter
 4. Now we are going to run the server, enter the following command npm start
 5. Once the server is running, we are now ready to install the client dependencies and run the client
 6. Open a new terminal, navigate to the client folder
-7. Show project structure image
-8. Enter the following command npm i to install the client dependencies
-9. Type npm start to run the client. Now our app is ready to use.
-10. Open your browser on http://localhost:3001
+7. Enter the following command npm i to install the client dependencies
+8. Type npm start to run the client. Now our app is ready to use.
+9. Open your browser on http://localhost:3000
 
 ## How to use <a name="howTo"></a>
 
