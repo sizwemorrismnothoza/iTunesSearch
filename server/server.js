@@ -4,10 +4,12 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const axios = require('axios');
+const url = require("url");
+
 
 const app = express();
 
-app.use(express.static(path.join(__dirname + "public")));
+app.use(express.static(path.join(__dirname + "/public")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
@@ -19,20 +21,36 @@ app.post('/search', async (req, res) => {
     let term = req.body.term;
     let mediaType = req.body.mediaType;
 
-    if (mediaType == "all") {
-        const response = await axios(`https://itunes.apple.com/search?term=${term}`)
-        const data = await response.json().catch((e) => {
-            console.log(e)
-            res.json(e);
-        });
-        res.json(data);
+    const queryParams = {
+        term: term,
+    };
+    
+    const params = new url.URLSearchParams(queryParams);
+
+    if (mediaType === "all") {
+        try {
+            const response = await axios.get('https://itunes.apple.com/search', {
+                params: {
+                    term: term
+                }
+            });s
+            res.json(response.data);
+        } catch (error) {
+            console.error(error);
+        }
     } else {
-        let response = await axios(`https://itunes.apple.com/search?term=${term}&entity=${mediaType}`);
-        const data = await response.json().catch((e) => {
-            console.log(e);
-            res.json(e);
-        });
-        res.json(data);
+        try {
+            const response = await axios.get('https://itunes.apple.com/search', {
+                params: {
+                    term: term,
+                    entity:mediaType
+                }
+            });
+            res.json(response.data);
+        } catch (error) {
+            console.error(error);
+            res.json(error);
+        }
     };
 });
 
