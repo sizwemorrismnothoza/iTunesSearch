@@ -6,7 +6,6 @@
 2. [Installation](#install)
 3. [How to use](#howTo)
 4. [Link to app](#link)
-5. [A description of the measures that I have taken to ensure the security of this app, including a description of how API keys have been dealt with.](#security)
 
 ## About <a name="about"></a>
 
@@ -53,8 +52,11 @@ Show an image of the search ui
 ### Adding an item to the favorites list
 
 1. In the search results each item has a add to favorite button. Click on it.
-2. To view your favorites list
+2. To view your favorites list clikc on the Favourites link in the top right conner
+
+### Removing an item from the favorites list
+
+1. On the Favorites page, there is a list of favorite items. Each item has a Remove button. Click on it 
 
 ## Link to app <a name="link"></a>
-
-## A description of the measures that I have taken to ensure the security of this app, including a description of how API keys have been dealt with.<a name="security"></a>
+### https://itunessearchv2.herokuapp.com/
