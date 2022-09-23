@@ -23,14 +23,10 @@ iTunes Search is a app that allows the user to search the iTunes api. The user c
 ### Installation and starting the app
 
 1. Open your terminal and navigate to your project directory
-2. In the project root directory there are two folders namely client and server. We are first going to install our server dependencies and start up our server.
+2. In the project root directory there are two folders namely client and server. We are going to install our server dependencies and start up our server.
 3. Navigate into the server folder and enter the following command npm i to install server dependencies
 4. Now we are going to run the server, enter the following command npm start
-5. Once the server is running, we are now ready to install the client dependencies and run the client
-6. Open a new terminal, navigate to the client folder
-7. Enter the following command npm i to install the client dependencies
-8. Type npm start to run the client. Now our app is ready to use.
-9. Open your browser on http://localhost:3000
+5. Once the server is running, Open your browser on http://localhost:3001
 
 ## How to use <a name="howTo"></a>
 
@@ -57,14 +53,16 @@ Show an image of the search ui
 
 ### Removing an item from the favorites list
 
-1. On the Favorites page, there is a list of favorite items. Each item has a Remove button. Click on it 
+1. On the Favorites page, there is a list of favorite items. Each item has a Remove button. Click on it
 
 ## Link to app <a name="link"></a>
+
 ### https://itunessearchv2.herokuapp.com/
 
 ## App Security Messures <a name="security"></a>
 
 ### Use Helmet
+
 Helmet can help protect your app from some well-known web vulnerabilities by setting HTTP headers appropriately.
 Helmet is a collection of several smaller middleware functions that set security-related HTTP response headers.
 
