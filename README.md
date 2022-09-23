@@ -63,3 +63,11 @@ Show an image of the search ui
 ### https://itunessearchv2.herokuapp.com/
 
 ## App Security Messures <a name="security"></a>
+
+### Use Helmet
+Helmet can help protect your app from some well-known web vulnerabilities by setting HTTP headers appropriately.
+Helmet is a collection of several smaller middleware functions that set security-related HTTP response headers.
+
+### Ensure your dependencies are secure
+
+Using npm to manage your application’s dependencies is powerful and convenient. But the packages that you use may contain critical security vulnerabilities that could also affect your application. The security of your app is only as strong as the “weakest link” in your dependencies.
