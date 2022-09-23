@@ -6,6 +6,7 @@
 2. [Installation](#install)
 3. [How to use](#howTo)
 4. [Link to app](#link)
+5. [App Security Messures](#security)
 
 ## About <a name="about"></a>
 
@@ -60,3 +61,5 @@ Show an image of the search ui
 
 ## Link to app <a name="link"></a>
 ### https://itunessearchv2.herokuapp.com/
+
+## App Security Messures <a name="security"></a>
